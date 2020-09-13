@@ -1,0 +1,15 @@
+<div class="row">
+    <select (change)="sortSongsBy($event)" class="form-control">
+        <option></option>
+        <option value="artist">Sort by artist</option>
+        <option value="title">Sort by title</option>
+        <option value="count">Sort by count</option>
+
+    </select>
+
+</div>
+<div *ngFor="let song of songss" [class.selected]="song === selectedSong">
+    <p>{{song.title}}</p>
+
+</div>
+<app-song-component [song]="selectedSong"></app-song-component>
