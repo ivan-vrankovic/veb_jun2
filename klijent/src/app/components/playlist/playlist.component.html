@@ -8,8 +8,3 @@
     </select>
 
 </div>
-<div *ngFor="let song of songss" [class.selected]="song === selectedSong">
-    <p>{{song.title}}</p>
-
-</div>
-<app-song-component [song]="selectedSong"></app-song-component>
