@@ -8,3 +8,6 @@
     </select>
 
 </div>
+<app-song-component *ngFor ="let s of songss" [song]= s >
+    {{s.title}}  {{s.artist}} {{s.count}}
+</app-song-component>
